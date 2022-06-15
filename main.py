@@ -46,7 +46,35 @@ while shopping_is_on:
         add_items()
     elif user_input == "remove":
         remove_items()
-    elif user_input == "view":
+    elif user_input == "view":)
         view_items()
     else:
         print("I am sorry but that is not one of the selections please enter the right word to continue shopping.")
+#-------------------------------------------hw part 2----------------------------------------------------#
+
+from calculator import square_foot, circumference
+
+def math_time():
+   print( """
+    Welcome to Math Time
+    Below are instructions to the program
+    
+    To get the square footage: type footage
+    
+    To get the circumference of a circle: type circle
+    """)
+   
+
+calculator_is_on = True
+math_time()
+while calculator_is_on:
+    keep_going = input("Do you want to keep going? yes or no: ")
+    if keep_going == "no":
+        break
+    calculate= input("What do you want to calculate? ")
+    if calculate == "footage":
+        square_foot()
+    elif calculate == "circle":
+        circumference()
+    else:
+        print("Please make a valid selection")
